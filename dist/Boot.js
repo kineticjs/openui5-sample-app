@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Core","sap/ui/core/library","sap/m/library"],function(e){"use strict";Promise.all([e.getLibraryResourceBundle("sap.ui.core",true),e.getLibraryResourceBundle("sap.m",true)]).then(function(){e.boot()})});
