@@ -12,7 +12,8 @@
 		"test": "npm run lint && npm run karma-ci",
 		"build": "ui5 build -a --clean-dest",
 		"build-self-contained": "ui5 build self-contained -a --clean-dest",
-		"serve-dist": "ws --compress -d dist"
+		"serve-dist": "ws --compress -d dist",
+		"lh": "npm run build && lhci autorun"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -23,6 +24,7 @@
 		"karma-coverage": "^2.0.3",
 		"karma-ui5": "^2.3.4",
 		"local-web-server": "^4.2.1",
-		"rimraf": "^3.0.2"
+		"rimraf": "^3.0.2",
+		"@lhci/cli": "^0.8.0"
 	}
 }

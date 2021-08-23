@@ -5,17 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>OpenUI5 Todo App</title>
 
+	<style>
+		html {
+			height: 100%;
+		}
+	</style>
+
 	<script id="sap-ui-bootstrap"
-		src="resources/sap-ui-core.js"
-		data-sap-ui-libs="sap.m"
+		src="resources/custom-boot.js"
 		data-sap-ui-xx-waitForTheme="true"
 		data-sap-ui-theme="sap_fiori_3"
 		data-sap-ui-resourceRoots='{
 			"sap.ui.demo.todo": "./"
 		}'
+		data-sap-ui-modules="sap.ui.demo.todo.Component-bundle"
 		data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
 		data-sap-ui-compatVersion="edge"
-		data-sap-ui-async="true">
+		data-sap-ui-async="true"
+		async>
 	</script>
 </head>
 
